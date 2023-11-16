@@ -1,4 +1,4 @@
-import type { LinksFunction } from '@remix-run/cloudflare'
+import type { LinksFunction, MetaFunction } from '@remix-run/cloudflare'
 import { cssBundleHref } from '@remix-run/css-bundle'
 import {
   Links,
@@ -15,6 +15,13 @@ export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: styles },
 ]
 
+export const meta: MetaFunction = () => {
+  return [
+    { title: 'Framer Motion Excersise' },
+    { name: 'description', content: 'Welcome to Remix!' },
+  ]
+}
+
 export default function App() {
   return (
     <html lang="en">
@@ -24,8 +31,17 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <Outlet />
+      <body className="grid grid-rows-[auto_1fr_auto] h-screen">
+        <header>
+          <h1>Framer Motion Excersise</h1>
+        </header>
+
+        <main className="flex flex-col items-center justify-center">
+          <Outlet />
+        </main>
+
+        <footer>Copyright &copy; coji</footer>
+
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
