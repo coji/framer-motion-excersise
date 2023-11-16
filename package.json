@@ -15,6 +15,7 @@
     "@remix-run/cloudflare-pages": "^2.2.0",
     "@remix-run/css-bundle": "^2.2.0",
     "@remix-run/react": "^2.2.0",
+    "framer-motion": "^10.16.5",
     "isbot": "^3.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -29,6 +30,7 @@
     "prettier": "^3.1.0",
     "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2",
     "wrangler": "^3.15.0"
   },
