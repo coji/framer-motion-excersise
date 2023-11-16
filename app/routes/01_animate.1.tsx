@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-export default function AnimationsPage() {
+export default function Animate2Page() {
   return (
     <div>
       <ul className="rounded-lg  bg-slate-200  text-center leading-5">
@@ -15,7 +15,7 @@ export default function AnimationsPage() {
         {/* animate y and delay 0.5sec */}
         <motion.li
           className="rounded-full bg-indigo-500 px-2 text-white shadow"
-          animate={{ y: 100, transition: { delay: 0.5 } }}
+          animate={{ y: 100 }}
         >
           2
         </motion.li>
@@ -31,7 +31,9 @@ export default function AnimationsPage() {
         {/* animate scale */}
         <motion.li
           className="rounded-full bg-indigo-500 px-2 text-white shadow"
-          whileHover={{ scale: 5 }}
+          animate={{
+            scale: [1, 1.5, 2, 1],
+          }}
         >
           4
         </motion.li>

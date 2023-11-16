@@ -31,12 +31,12 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="grid grid-rows-[auto_1fr_auto] h-screen">
+      <body className="grid h-screen grid-rows-[auto_1fr_auto]">
         <header>
           <h1>Framer Motion Excersise</h1>
         </header>
 
-        <main className="flex flex-col items-center justify-center">
+        <main>
           <Outlet />
         </main>
 
