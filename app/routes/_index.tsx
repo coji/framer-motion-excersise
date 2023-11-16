@@ -1,4 +1,4 @@
-import { Link } from '@remix-run/react'
+import { NavLink } from '@remix-run/react'
 export default function IndexPage() {
-  return <Link to="01_animations">01Animations</Link>
+  return <NavLink to="01_animate">01 Animate</NavLink>
 }
