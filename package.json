@@ -31,8 +31,8 @@
     "framer-motion": "^10.16.5",
     "isbot": "^3.7.1",
     "lucide-react": "^0.292.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "18.3.0-canary-2c338b16f-20231116",
+    "react-dom": "18.3.0-canary-2c338b16f-20231116",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7"
   },
